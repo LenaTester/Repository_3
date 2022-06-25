@@ -27,6 +27,7 @@ def test_user_comments(successful_login_go_to_profile):
     '''check, that user does not have comments - 10'''
     profile_page = successful_login_go_to_profile
     notification = profile_page.get_notification_comments()
+    print(notification)
     assert notification == '0', \
         f'\nUser have comments\nActual: {notification}\nExpected: "0"'
 

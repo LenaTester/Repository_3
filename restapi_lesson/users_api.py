@@ -1,0 +1,14 @@
+from restapi_lesson.base_api import BaseAPI
+
+
+class UsersApi(BaseAPI):
+
+    def __init__(self):
+        super().__init__()
+        self.user_url = "/api/users/"
+
+    def get_user(self, user_id, headers=None):
+        print('GET PEOPLE')
+        return self.get(url=f"{self.user_url}{user_id}", headers=headers)
+
+
