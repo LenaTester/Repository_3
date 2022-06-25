@@ -1,7 +1,7 @@
 import pytest
 
-from restapi_lesson.user_data_class import User
-from restapi_lesson.color_class import Color
+from pythonProject.Repository_3.restapi_lesson.class_object.user_data_class import User
+from pythonProject.Repository_3.restapi_lesson.class_object.color_class import Color
 
 
 @pytest.fixture

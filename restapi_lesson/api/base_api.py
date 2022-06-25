@@ -1,4 +1,4 @@
-from restapi_lesson.config import config
+from pythonProject.Repository_3.restapi_lesson.utilities.config import config
 import requests
 
 

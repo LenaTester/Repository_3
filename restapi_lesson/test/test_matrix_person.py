@@ -4,9 +4,7 @@ from http import HTTPStatus
 import requests
 from requests import get, post
 
-from restapi_lesson.config import config
-from restapi_lesson.matrix_person_api import MatrixPersonAPI
-from restapi_lesson.matrix_person_class import MatrixPerson
+from pythonProject.Repository_3.restapi_lesson.utilities.config import config
 
 def test_post_matrix_person():
     '''post new matrix person - 7'''

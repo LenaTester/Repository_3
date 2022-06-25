@@ -1,4 +1,4 @@
-from restapi_lesson.base_api import BaseAPI
+from pythonProject.Repository_3.restapi_lesson.api.base_api import BaseAPI
 
 
 class ColorsAPI(BaseAPI):

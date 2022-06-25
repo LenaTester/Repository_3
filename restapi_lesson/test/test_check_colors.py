@@ -4,9 +4,9 @@ from http import HTTPStatus
 import requests
 from requests import get, post
 
-from restapi_lesson.config import config
-from restapi_lesson.colors_api import ColorsAPI
-from restapi_lesson.color_class import Color
+from pythonProject.Repository_3.restapi_lesson.utilities.config import config
+from pythonProject.Repository_3.restapi_lesson.api.colors_api import ColorsAPI
+from pythonProject.Repository_3.restapi_lesson.class_object.color_class import Color
 
 def get_color(color_id):
     return get(f"{config['base_url']}/api/unknown/{color_id}")

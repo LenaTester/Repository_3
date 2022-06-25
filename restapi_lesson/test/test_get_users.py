@@ -4,9 +4,9 @@ from http import HTTPStatus
 import requests
 from requests import get, post
 
-from restapi_lesson.config import config
-from restapi_lesson.users_api import UsersApi
-from restapi_lesson.user_data_class import User
+from pythonProject.Repository_3.restapi_lesson.utilities.config import config
+from pythonProject.Repository_3.restapi_lesson.api.users_api import UsersApi
+from pythonProject.Repository_3.restapi_lesson.class_object.user_data_class import User
 
 
 def get_user(user_id):
