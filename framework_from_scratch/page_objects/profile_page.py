@@ -1,11 +1,11 @@
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
-from framework_from_scratch.utilities.web_ui.base_page import BasePage
-from framework_from_scratch.page_objects.new_email_page import NewEmailPage
-from framework_from_scratch.page_objects.new_successful_password import NewSuccessfulPassword
+from pythonProject.Repository_3.framework_from_scratch.utilities.web_ui.base_page import BasePage
+from pythonProject.Repository_3.framework_from_scratch.page_objects.new_email_page import NewEmailPage
+from pythonProject.Repository_3.framework_from_scratch.page_objects.new_successful_password import NewSuccessfulPassword
+from pythonProject.Repository_3.framework_from_scratch.utilities.decorators import auto_steps
 
+@auto_steps
 class ProfilePage(BasePage):
     __new_password = (By.XPATH, '//input[@name="n_password"]')
     __new_password_confirmation = (By.XPATH, '//input[@name="n_password_2"]')

@@ -1,9 +1,9 @@
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
-from framework_from_scratch.utilities.web_ui.base_page import BasePage
+from pythonProject.Repository_3.framework_from_scratch.utilities.web_ui.base_page import BasePage
+from pythonProject.Repository_3.framework_from_scratch.utilities.decorators import auto_steps
 
+@auto_steps
 class WrongCreds(BasePage):
     __notification_label = (By.XPATH, '//p[1]')
 

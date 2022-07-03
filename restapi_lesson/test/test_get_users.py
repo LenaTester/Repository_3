@@ -1,16 +1,11 @@
 import json
 from http import HTTPStatus
 
-import requests
 from requests import get, post
 
 from pythonProject.Repository_3.restapi_lesson.utilities.config import config
 from pythonProject.Repository_3.restapi_lesson.api.users_api import UsersApi
 from pythonProject.Repository_3.restapi_lesson.class_object.user_data_class import User
-
-
-def get_user(user_id):
-    return get(f"{config['base_url']}/api/users?page=2/{user_id}")
 
 def test_get_user_response():
     '''get all users list - 200 - 4'''
